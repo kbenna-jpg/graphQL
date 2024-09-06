@@ -1,0 +1,176 @@
+/* ================ LABELS, FONTS AND ANIMATIONS ================ */
+h1 {
+    font-size: 40px;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    color:rgb(15, 13, 121);
+    animation: slideInLeft 0.8s ease-in-out;
+    font-weight: 800;
+}
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+h2 {
+    font-size: 50px;
+    color:rgb(2, 18, 120);
+    text-shadow: 3px 3px 3px #ababab;
+    
+
+}
+
+.exo-2-header {
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 4px;
+    text-align: center;
+    
+}
+
+h3 {
+    animation: fadeIn 3s ease-in-out; 
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    color: #0f04aa;
+    font-weight: 400;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+p {
+    font-family: Arial;
+    color: rgb(22, 141, 246);
+    font-size: 20px;
+    line-height: 1.6;
+}
+body {
+    background-color: rgb(223, 238, 238);
+}
+/* ================ LOGIN CONTAINER, BUTTON AND LOGOUT STYLING ================ */
+.loginform-container {
+    background-color: rgb(239, 255, 97);
+    font-size: 18px;
+    width: 500px;
+    padding: 50px;
+    margin: 0 auto;
+    border: 1px solid blueviolet;
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: content-box;
+  }
+ 
+#btn-login {
+    background-color: #0f04aa;
+    color: white;
+    padding: 20px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    width: 600px;
+    display: block; 
+    margin: 20px auto 0;
+}
+#btn-logout {
+    background-color: #0f04aa;
+    color: white;
+    padding: 20px 40px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 150ms ease;
+
+
+}
+button:hover {
+    opacity: 0.8;
+    scale: 1.05;
+  }
+
+  /* ================ HOMEPAGE STYLING ================ */
+
+.dashboard {
+    background-color: rgba(239, 255, 97, 0.764);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+.userInfo {
+    background-color: rgb(239, 255, 97);
+    width: 600px;
+    height: 300px;
+    border-radius: 10px;
+    text-align: center;
+    padding-bottom: 70px;
+    margin: 0 auto; 
+
+
+}
+
+.userInfo:hover {
+    background-color: lightgrey;
+
+}
+
+.userInfo p {
+    font-size: 24px; 
+    font-family: "Space Mono", monospace;
+}
+
+
+/* ================ CHARTS STYLING ================ */
+
+#graph-container {
+    width: 800px;
+    height: 500px; 
+    margin-top: 30px;
+    border: 1px solid #bf9090; 
+    background-color: #f4f4f4; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.charts-container {
+    background-color: rgb(220, 244, 197);
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 300px;
+}
+
+.charts-header {
+    width: 45%;
+    margin-top: 10px;
+    background-color: rgb(94, 122, 105);
+    color: white;
+    font-weight: 400;
+    font-size: 40px;
+    border-radius: 10px;
+    padding: 10px 10px;
+}
+
+.charts-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
